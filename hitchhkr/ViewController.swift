@@ -11,15 +11,16 @@ import MapKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var actionBtn: RoundedShadowButton!
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    @IBAction func actionBtnWasPressed(_ sender: Any) {
+
+    @IBAction func actionButtonPressed(_ sender: Any) {
         actionBtn.animateButton(shouldLoad: true, withMessage: nil)
     }
-    
 }
 
