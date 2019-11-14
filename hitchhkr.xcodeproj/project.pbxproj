@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B12F5C4235D979600389445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F5C3235D979600389445 /* AppDelegate.swift */; };
-		1B12F5C6235D979600389445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F5C5235D979600389445 /* ViewController.swift */; };
+		1B12F5C6235D979600389445 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F5C5235D979600389445 /* HomeVC.swift */; };
 		1B12F5C9235D979600389445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B12F5C7235D979600389445 /* Main.storyboard */; };
 		1B12F5CC235D979600389445 /* hitchhkr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F5CA235D979600389445 /* hitchhkr.xcdatamodeld */; };
 		1B12F5CE235D979900389445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B12F5CD235D979900389445 /* Assets.xcassets */; };
@@ -18,6 +18,7 @@
 		1B9991DF236E83A100DAC310 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9991DE236E83A100DAC310 /* RoundedShadowView.swift */; };
 		1B9991E1236E93BE00DAC310 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9991E0236E93BE00DAC310 /* CircleView.swift */; };
 		1B9991E3236E99C400DAC310 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9991E2236E99C400DAC310 /* RoundedShadowButton.swift */; };
+		1BA941FB237D491900A79423 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA941FA237D491900A79423 /* LeftSidePanelVC.swift */; };
 		1EF12CFC0D24E628A39FE573 /* Pods_hitchhkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBC691C808188168866FBD9 /* Pods_hitchhkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +26,7 @@
 		14433D968F1C38ABAA9C3617 /* Pods-hitchhkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhkr.release.xcconfig"; path = "Target Support Files/Pods-hitchhkr/Pods-hitchhkr.release.xcconfig"; sourceTree = "<group>"; };
 		1B12F5C0235D979600389445 /* hitchhkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hitchhkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B12F5C3235D979600389445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B12F5C5235D979600389445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B12F5C5235D979600389445 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1B12F5C8235D979600389445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B12F5CB235D979600389445 /* hitchhkr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hitchhkr.xcdatamodel; sourceTree = "<group>"; };
 		1B12F5CD235D979900389445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		1B9991DE236E83A100DAC310 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		1B9991E0236E93BE00DAC310 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1B9991E2236E99C400DAC310 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		1BA941FA237D491900A79423 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		6EBC691C808188168866FBD9 /* Pods_hitchhkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitchhkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9B1D2761740074A8B143FB /* Pods-hitchhkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhkr.debug.xcconfig"; path = "Target Support Files/Pods-hitchhkr/Pods-hitchhkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,11 +83,11 @@
 		1B12F5C2235D979600389445 /* hitchhkr */ = {
 			isa = PBXGroup;
 			children = (
-				1B9991D9236E687200DAC310 /* Controller */,
+				1BA941F9237D48FE00A79423 /* Model */,
+				1BA941F8237D48F500A79423 /* Controller */,
 				1B9991D7236E686200DAC310 /* View */,
-				1B9991D6236E685200DAC310 /* Model */,
 				1B12F5C3235D979600389445 /* AppDelegate.swift */,
-				1B12F5C5235D979600389445 /* ViewController.swift */,
+				1B12F5C5235D979600389445 /* HomeVC.swift */,
 				1B12F5C7235D979600389445 /* Main.storyboard */,
 				1B12F5CD235D979900389445 /* Assets.xcassets */,
 				1B12F5CF235D979900389445 /* LaunchScreen.storyboard */,
@@ -93,13 +95,6 @@
 				1B12F5CA235D979600389445 /* hitchhkr.xcdatamodeld */,
 			);
 			path = hitchhkr;
-			sourceTree = "<group>";
-		};
-		1B9991D6236E685200DAC310 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B9991D7236E686200DAC310 /* View */ = {
@@ -114,11 +109,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1B9991D9236E687200DAC310 /* Controller */ = {
+		1BA941F8237D48F500A79423 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BA941FA237D491900A79423 /* LeftSidePanelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BA941F9237D48FE00A79423 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		872BA6C42F33E14CA232757F /* Pods */ = {
@@ -245,11 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA941FB237D491900A79423 /* LeftSidePanelVC.swift in Sources */,
 				1B9991DD236E7ED800DAC310 /* RoundImageView.swift in Sources */,
 				1B12F5CC235D979600389445 /* hitchhkr.xcdatamodeld in Sources */,
 				1B9991DF236E83A100DAC310 /* RoundedShadowView.swift in Sources */,
 				1B9991DB236E68A700DAC310 /* GrandientView.swift in Sources */,
-				1B12F5C6235D979600389445 /* ViewController.swift in Sources */,
+				1B12F5C6235D979600389445 /* HomeVC.swift in Sources */,
 				1B9991E1236E93BE00DAC310 /* CircleView.swift in Sources */,
 				1B12F5C4235D979600389445 /* AppDelegate.swift in Sources */,
 				1B9991E3236E99C400DAC310 /* RoundedShadowButton.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC
 //  hitchhkr
 //
 //  Created by Qaisar Khan on 21/10/19.
@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     
     @IBOutlet weak var actionBtn: RoundedShadowButton!
