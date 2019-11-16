@@ -152,7 +152,12 @@ extension ContainerVC : CenterVCDelegate {
     }
 
     func shouldShowShadowForCenterViewController(status: Bool) {
-        
+        if true {
+            centerController.view.layer.shadowOpacity = 0.6
+        }
+        else {
+            centerController.view.layer.shadowOpacity = 0.0
+        }
     }
     
     func animateStatusBar() {
