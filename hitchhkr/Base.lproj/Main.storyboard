@@ -14,7 +14,7 @@
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="hitchhkr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="hitchhkr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knZ-rK-zBU">
                                                 <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="50"/>
                                                 <state key="normal" image="menuSliderBtn"/>
+                                                <connections>
+                                                    <action selector="actionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jh6-7S-4Kf"/>
+                                                    <action selector="menuBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ibi-4o-7an"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OxG-fA-Jl7">
                                                 <rect key="frame" x="138.66666666666663" y="0.0" width="128.33333333333337" height="50"/>
@@ -218,7 +222,7 @@
         <!--Left Side PanelVC-->
         <scene sceneID="ELx-ks-vye">
             <objects>
-                <viewController id="IIv-Vc-ev7" customClass="LeftSidePanelVC" customModule="hitchhkr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftSidePanelVC" id="IIv-Vc-ev7" customClass="LeftSidePanelVC" customModule="hitchhkr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxm-Lj-wW1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
