@@ -21,6 +21,7 @@
 		1BA941FB237D491900A79423 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA941FA237D491900A79423 /* LeftSidePanelVC.swift */; };
 		1BC529EC237F7912004C5A99 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC529EB237F7912004C5A99 /* ContainerVC.swift */; };
 		1BC529EF237F831E004C5A99 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC529EE237F831E004C5A99 /* CenterVCDelegate.swift */; };
+		1BC529F2237FFB0B004C5A99 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC529F1237FFB0B004C5A99 /* UIViewExt.swift */; };
 		1EF12CFC0D24E628A39FE573 /* Pods_hitchhkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBC691C808188168866FBD9 /* Pods_hitchhkr.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		1BA941FA237D491900A79423 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		1BC529EB237F7912004C5A99 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		1BC529EE237F831E004C5A99 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
+		1BC529F1237FFB0B004C5A99 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		6EBC691C808188168866FBD9 /* Pods_hitchhkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitchhkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9B1D2761740074A8B143FB /* Pods-hitchhkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhkr.debug.xcconfig"; path = "Target Support Files/Pods-hitchhkr/Pods-hitchhkr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 		1B12F5C2235D979600389445 /* hitchhkr */ = {
 			isa = PBXGroup;
 			children = (
+				1BC529F0237FFAEA004C5A99 /* Extensions */,
 				1BC529ED237F82D7004C5A99 /* Protocols */,
 				1BA941F9237D48FE00A79423 /* Model */,
 				1BA941F8237D48F500A79423 /* Controller */,
@@ -136,6 +139,14 @@
 				1BC529EE237F831E004C5A99 /* CenterVCDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1BC529F0237FFAEA004C5A99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BC529F1237FFB0B004C5A99 /* UIViewExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		872BA6C42F33E14CA232757F /* Pods */ = {
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC529F2237FFB0B004C5A99 /* UIViewExt.swift in Sources */,
 				1BA941FB237D491900A79423 /* LeftSidePanelVC.swift in Sources */,
 				1B9991DD236E7ED800DAC310 /* RoundImageView.swift in Sources */,
 				1B12F5CC235D979600389445 /* hitchhkr.xcdatamodeld in Sources */,
