@@ -13,6 +13,7 @@
 		1B12F5CC235D979600389445 /* hitchhkr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F5CA235D979600389445 /* hitchhkr.xcdatamodeld */; };
 		1B12F5CE235D979900389445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B12F5CD235D979900389445 /* Assets.xcassets */; };
 		1B12F5D1235D979900389445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B12F5CF235D979900389445 /* LaunchScreen.storyboard */; };
+		1B93F75F2382896C009F20CC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93F75E2382896C009F20CC /* LoginVC.swift */; };
 		1B9991DB236E68A700DAC310 /* GrandientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9991DA236E68A700DAC310 /* GrandientView.swift */; };
 		1B9991DD236E7ED800DAC310 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9991DC236E7ED800DAC310 /* RoundImageView.swift */; };
 		1B9991DF236E83A100DAC310 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9991DE236E83A100DAC310 /* RoundedShadowView.swift */; };
@@ -35,6 +36,7 @@
 		1B12F5CD235D979900389445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B12F5D0235D979900389445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B12F5D2235D979900389445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B93F75E2382896C009F20CC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1B9991DA236E68A700DAC310 /* GrandientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandientView.swift; sourceTree = "<group>"; };
 		1B9991DC236E7ED800DAC310 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		1B9991DE236E83A100DAC310 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				1BA941FA237D491900A79423 /* LeftSidePanelVC.swift */,
 				1BC529EB237F7912004C5A99 /* ContainerVC.swift */,
+				1B93F75E2382896C009F20CC /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				1BC529EC237F7912004C5A99 /* ContainerVC.swift in Sources */,
 				1B9991DB236E68A700DAC310 /* GrandientView.swift in Sources */,
 				1B12F5C6235D979600389445 /* HomeVC.swift in Sources */,
+				1B93F75F2382896C009F20CC /* LoginVC.swift in Sources */,
 				1B9991E1236E93BE00DAC310 /* CircleView.swift in Sources */,
 				1B12F5C4235D979600389445 /* AppDelegate.swift in Sources */,
 				1B9991E3236E99C400DAC310 /* RoundedShadowButton.swift in Sources */,
