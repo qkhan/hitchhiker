@@ -335,6 +335,9 @@
                                                 <constraint firstAttribute="width" constant="30" id="KTP-PK-poQ"/>
                                             </constraints>
                                             <state key="normal" image="cancelBtn"/>
+                                            <connections>
+                                                <action selector="cancelBtnWasPressed:" destination="7Dd-EU-pLn" eventType="touchUpInside" id="h4B-E5-rIS"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xj7-9x-F6h">
                                             <rect key="frame" x="17" y="264.66666666666663" width="380" height="366.66666666666663"/>
@@ -381,7 +384,7 @@
                                                     </segments>
                                                     <color key="tintColor" red="0.80954318579999995" green="0.19044851660000001" blue="0.098388671839999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </segmentedControl>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KbG-v1-jum">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KbG-v1-jum" customClass="RounderCornerTextField" customModule="hitchhkr" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="226.66666666666663" width="380" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="dhX-BM-jUD"/>
@@ -390,7 +393,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04V-q2-NcZ">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04V-q2-NcZ" customClass="RounderCornerTextField" customModule="hitchhkr" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="306.66666666666669" width="380" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="XiX-BF-Lq9"/>
@@ -411,6 +414,9 @@
                                             <state key="normal" title="SIGN UP / LOGIN">
                                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="authBtnWasPressed:" destination="7Dd-EU-pLn" eventType="touchUpInside" id="FLC-pS-vAf"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -439,6 +445,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tWK-Ql-GZf"/>
                     </view>
+                    <connections>
+                        <outlet property="authBtn" destination="zPY-R5-Dsz" id="9DK-pq-Hsc"/>
+                        <outlet property="emailField" destination="KbG-v1-jum" id="zka-T2-1TQ"/>
+                        <outlet property="passwordField" destination="04V-q2-NcZ" id="CPP-cl-w3n"/>
+                        <outlet property="segmentedControl" destination="uX9-4N-dpo" id="g22-oe-v9V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tm6-um-mFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
