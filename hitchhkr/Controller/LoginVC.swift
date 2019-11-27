@@ -63,23 +63,23 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         self.dismiss(animated: true, completion: nil)
                     }//if error == nil
                     else {
+                        if let errCode = AuthErrorCode(rawValue: error!._code) {
+                            switch errCode {
+                                case .wrongPassword:
+                                    print("Whoops! That was wrong password")
+                                default:
+                                    print("An unexpected error occurred. Please try again.")
+                            }
+                        }
+                       
                         Auth.auth().createUser(withEmail: email,
                            password: password,
                            completion: { (user, error) in
                            if error != nil {
                                 if let errCode = AuthErrorCode(rawValue: error!._code) {
                                     switch errCode {
-                                        case .wrongPassword:
-                                            print("That was wrong password")
                                         case .invalidEmail:
-                                            print("Invalid Email, please try again")
-                                        
-                                        case .userNotFound:
-                                            print("User is not found")
-                                        case .emailAlreadyInUse:
-                                            print("Email is already in use.")
-                                        case .weakPassword:
-                                            print("password is week")
+                                            print("That is an Invalid Email, please try again")
                                         default:
                                              print("UnExpected error happened, please try again.")
                                     }//switch errCode
